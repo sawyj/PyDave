@@ -1,0 +1,32 @@
+﻿[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pydave"
+version = "0.1.0"
+description = "Python bindings and experiments for Discord DAVE/libdave"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [
+  { name = "Teta" }
+]
+dependencies = []
+keywords = ["discord", "dave", "libdave", "mls", "voice", "e2ee"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Topic :: Security :: Cryptography",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[tool.setuptools]
+package-dir = {"" = "source"}
+
+[tool.setuptools.packages.find]
+where = ["source"]
